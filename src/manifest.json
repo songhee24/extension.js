@@ -17,8 +17,11 @@
       "background.js"
     ]
   },
-  "chrome_url_overrides": {
-    "newtab": "newtab/index.html"
-  },
+  "content_scripts": [
+    {
+      "matches": ["*://one.dat.com/*"],
+      "js": ["./scripts/content.ts"]
+    }
+  ],
   "author": "songhee24"
 }

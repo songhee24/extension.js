@@ -5,8 +5,7 @@ const profile = (name) => `./dist/extension-profile-${name}`
 
 export default {
   browser: {
-    // chrome: { profile: profile('chrome') },
-    crome: {},
+    chrome: { profile: profile('chrome') },
     chromium: { profile: profile('chromium') },
     edge: { profile: profile('edge') },
     firefox: { profile: profile('firefox') },
